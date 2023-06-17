@@ -11,7 +11,8 @@ var app = express();
 var mongoose = require('mongoose');
 var uri = "mongodb+srv://anhtmgch210051:123@cluster0.v30jztj.mongodb.net/toys";
 mongoose.connect(uri)
-  .then(() => { console.log("db ok") });
+.then(() => console.log ("Connect to DB succeed !"))
+.catch((err) => console.log (err));
 //boydy-parer
 var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
