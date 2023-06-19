@@ -7,10 +7,10 @@ var toySchema = mongoose.Schema(
         Quality: String,
         Qrigin: String,
         Price: Number,
-
+        type: String
     },
-    
-         
+
+
 
 );
 
